@@ -23,4 +23,6 @@ Admin User Login Details:
 Email: admin@admin.com
 password: 123456
 
-Working Project Link:
+Working Project Link: Failing at CodeBuild stage on the code pipeline section
+
+Video of how the app works: https://drive.google.com/file/d/1ZRI6gYTCT5gRU_8jC7WkRq5ZQfi8PKJI/view?usp=sharing
