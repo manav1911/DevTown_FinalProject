@@ -7,6 +7,7 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
+import path from "path";
 
 //Configure env
 dotenv.config();
@@ -28,8 +29,8 @@ app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 //Rest API
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+app.use("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 //PORT
@@ -37,8 +38,5 @@ const PORT = process.env.PORT || 8080;
 
 //Run Listen
 app.listen(PORT, () => {
-  console.log(
-    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan
-      .white
-  );
+  console.log(`Server Running on port ${PORT}`.bgCyan.white);
 });

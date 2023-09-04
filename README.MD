@@ -19,8 +19,8 @@ The bonus features implemented are:
 2. Add pagination for product listing to enhance user experience.
 3. Implement a shopping cart for users to add multiple products before placing an order.
 
-Extra Features:
-
-1. Implemented a payment method using paypal
+Admin User Login Details:
+Email: admin@admin.com
+password: 123456
 
 Working Project Link:
